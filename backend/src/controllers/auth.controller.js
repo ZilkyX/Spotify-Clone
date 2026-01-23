@@ -19,3 +19,5 @@ export const authCallback = async (req, res) => {
     res.status(500).json({ message: "Internal server error.", error });
   }
 };
+
+export const createSong = async (req, res) => {};
