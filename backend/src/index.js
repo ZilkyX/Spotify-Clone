@@ -23,7 +23,11 @@ app.use(clerkMiddleware());
 app.use(
   fileUpload({
     useTempFiles: true,
-    tempFileDir: path,
+    tempFileDir: path.join(__dirname, "temp"),
+    createParentPath: true,
+    limits: {
+      fileSize: 10 * 1024 * 1024,
+    },
   }),
 );
 
