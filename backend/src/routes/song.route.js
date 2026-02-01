@@ -4,7 +4,7 @@ import {
   getFeaturedSongs,
   getMadeForYouSongs,
   getTrendingSongs,
-} from "../controllers/song.controller";
+} from "../controllers/song.controller.js";
 import { protectRoute, requireAdmin } from "../middleware/auth.middleware.js";
 
 const router = Router();
